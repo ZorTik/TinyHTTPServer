@@ -40,9 +40,10 @@ class Server:
 
     def route(self, path: str):
         """
+        Route decorator used for implementing route path handler
+        functions.
 
-        :param path: Route decorator used for implementing
-        route path handler functions.
+        :param path: Path format.
         :return: The decorator.
         """
         def decorate(func):
